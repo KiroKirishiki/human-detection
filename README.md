@@ -21,3 +21,6 @@ cap = cv2.VideoCapture('/path/to/video/TownCentreXVID.avi')
 ```
 После того как всё скачено, установлено и перепроверено можно запускать .py файл. Для выхода из окна работы программы нужно нажать Q.
 
+# Ссылки
+Приложение и модель взяты отсюда
+[Real-time Human Detection in Computer Vision — Part 2] (https://medium.com/@madhawavidanapathirana/real-time-human-detection-in-computer-vision-part-2-c7eda27115c6)
