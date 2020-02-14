@@ -2,10 +2,10 @@ import numpy as np
 import tensorflow as tf2
 import cv2
 import time
-# Отключение tensorflow 2.0.0+ возможностей
+# Disabling tensorflow 2.0.0+
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-# Подключение GPU для работы
+# Allow GPU to procces the application
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
 session = tf.InteractiveSession(config=config)
