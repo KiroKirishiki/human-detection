@@ -1,14 +1,11 @@
-# Code adapted from Tensorflow Object Detection Framework
-# https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
-# Tensorflow Object Detection Detector
-
 import numpy as np
 import tensorflow as tf2
 import cv2
 import time
+# Отключение tensorflow 2.0.0+ возможностей
 import tensorflow.compat.v1 as tf
-
 tf.disable_v2_behavior()
+# Подключение GPU для работы
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
 session = tf.InteractiveSession(config=config)
