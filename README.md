@@ -19,7 +19,7 @@
 model_path = '/path/to/model/faster_rcnn_inception_v2_coco_2018_01_28/frozen_inference_graph.pb'
 cap = cv2.VideoCapture('/path/to/video/TownCentreXVID.avi')
 ```
-Если вы устанавливаете версию с маппингом вам потребуется иметь план помещения, для того чтобы правильно производилась, а также настроить совпадения точек на изображении камеры и вашего плана
+Если вы устанавливаете версию с маппингом вам потребуется иметь план помещения, для того чтобы правильно производилась гомография, а также настроить совпадения точек на изображении камеры и вашего плана
 ```
 pts_src = np.array([[x1_camera, y1_camera], [x2_camera, y2_camera], [x3_camera, y3_camera], [x4_camera, y4_camera]])                
 pts_dst = np.array([[x1_plan, y1_plan], [x2_plan, y2_plan], [x3_plan, y3_plan], [x4_plan, y4_plan]])
