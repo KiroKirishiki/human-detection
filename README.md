@@ -24,7 +24,7 @@ cap = cv2.VideoCapture('/path/to/video/TownCentreXVID.avi')
 pts_src = np.array([[x1_camera, y1_camera], [x2_camera, y2_camera], [x3_camera, y3_camera], [x4_camera, y4_camera]])                
 pts_dst = np.array([[x1_plan, y1_plan], [x2_plan, y2_plan], [x3_plan, y3_plan], [x4_plan, y4_plan]])
 ```
-А так же сохранение плана с нанесенной точкой
+А так же указать путь для сохранения плана с нанесенной точкой
 ```
 im_dst = cv2.imread('/path/to/test plan.jpg')
 cv2.imwrite('/path/to/test plan.jpg', im_dst)
