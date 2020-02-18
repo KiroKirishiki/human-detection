@@ -75,7 +75,8 @@ if __name__ == "__main__":
     while True:
         r, img = cap.read()
         img = cv2.resize(img, (1280, 720))
-        img = cv2.flip(img, 1)
+        # In case image is mirrored
+        #img = cv2.flip(img, 1)
         boxes, scores, classes, num = odapi.processFrame(img)
         im_src = img
         # Visualization of the results of a detection.
@@ -114,7 +115,7 @@ if __name__ == "__main__":
         #see the map with the result
         cv2.imshow("Map Image", im_dst)
 
-        # rewriting test map
+        # rewriting test map to see the track
         cv2.imwrite('/path/to/test plan.jpg', im_dst)
 
         # uncomment code below to see Homography result
